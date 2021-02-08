@@ -35,5 +35,12 @@ anomalyID, srcIP, srcPort, dstIP, dstPort, taxonomy, heuristic, distance, nbDete
 - nbDetectors is the number of configurations (detector and parameter tuning) that reported the anomaly.
 - label is the MAWILab label assigned to the anomaly, it can be either: anomalous, suspicious, or notice.
 
+
+
+## Built with
+
+- [Python 3.7](https://www.python.org/)
+- [Scapy](https://scapy.net/)
+
 ## Reference
 http://www.fukuda-lab.org/mawilab/
