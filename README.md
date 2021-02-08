@@ -4,7 +4,7 @@
 MAWILab is a database that assists researchers to evaluate their traffic anomaly detection methods. It consists of a set of labels locating traffic anomalies in the MAWI archive (samplepoints B and F). The labels are obtained using an advanced graph-based methodology that compares and combines different and independent anomaly detectors. The data set is daily updated to include new traffic from upcoming applications and anomalies.
 
 ## Anomaly taxonomy
-Mazel et al. (TRAC 2014) presented a taxonomy that reveals the nature of backbone traffic anomalies. MAWILab takes advantage of this taxonomy to provide more insights into the identified anomalies. The taxonomy consists of more than one hundred labels and corresponding signatures to classify events identified in backbone traffic. The details of labels and signatures are available at http://www.fukuda-lab.org/mawilab/classification/ .
+[Mazel et al. (TRAC 2014)](http://www.necoma-project.eu/m/filer_public/0d/34/0d34ebf0-0e45-46ea-a40b-852bc6eb758f/johan_taxonomy.pdf) presented a taxonomy that reveals the nature of backbone traffic anomalies. MAWILab takes advantage of this taxonomy to provide more insights into the identified anomalies. The taxonomy consists of more than one hundred labels and corresponding signatures to classify events identified in backbone traffic. The details of labels and signatures are available at http://www.fukuda-lab.org/mawilab/classification/ .
 
 Since MAWILab v1.1, the plots depicting the byte and packet breakdown in the data set webpages (e.g. http://www.fukuda-lab.org/mawilab/v1.1/index.html) are also based on this taxonomy. Each class in the plots corresponds to labels with a certain prefix:
 
