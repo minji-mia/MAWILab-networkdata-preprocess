@@ -20,5 +20,20 @@ Since MAWILab v1.1, the plots depicting the byte and packet breakdown in the dat
 - Network scan TCP are labels starting with the prefixes "ntscACK","ntscSYN","sntscSYN","ntscTCP","ntscnull","ntscXmas","ntscFIN" and "dntscSYN"
 - DoS are labels starting with the prefixes "DoS","distributed_dos","ptpDoS","sptpDoS","DDoS" and "rflat"
 
+## CSV format
+Since MAWILab v1.1, anomalies are also reported in CSV format. Each line in the CSV files consists of a 4-tuple describing the traffic characteristics (similar to filters in the admd format) and additional information such as the heuristic and taxonomy classification results. The actual order of the fields is given by the CSV files header:
+
+anomalyID, srcIP, srcPort, dstIP, dstPort, taxonomy, heuristic, distance, nbDetectors, label
+- anomalyID is a unique anomaly identifier. Several lines in the CSV file can describe different sets of packets that belong to the same anomaly. The anomalyID field permits to identify lines that refer to the same anomaly.
+- srcIP is the source IP address of the identified anomalous traffic (optional).
+- srcPort is the source port of the identified anomalous traffic (optional).
+- dstIP is the destination IP address of the identified anomalous traffic (optional).
+- dstPort is the destination port of the identified anomalous traffic (optional).
+- taxonomy is the category assigned to the anomaly using the taxonomy for backbone traffic anomalies.
+- heuristic is the code assigned to the anomaly using simple heuristic based on port number, TCP flags and ICMP code.
+- distance is the difference Dn-Da, see XML Schema (admd).
+- nbDetectors is the number of configurations (detector and parameter tuning) that reported the anomaly.
+- label is the MAWILab label assigned to the anomaly, it can be either: anomalous, suspicious, or notice.
+
 ## Reference
 http://www.fukuda-lab.org/mawilab/
